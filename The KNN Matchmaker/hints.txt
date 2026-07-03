@@ -1,0 +1,11 @@
+# Hints / Tips Pengerjaan KNN Matchmaker
+
+1. **Jarak (Euclidean Distance)**: 
+   Jika Anda kesulitan dengan akar kuadrat di Python, Anda bisa menggunakan operator pangkat dua `** 0.5` atau import module `math` dan gunakan `math.sqrt()`.
+   
+2. **Sorting Jarak**:
+   Saat menyimpan jarak dan label kelas, simpan dalam bentuk Tuple/List berpasangan: `[jarak, kelas]`.
+   Fungsi `.sort()` di Python otomatis akan mengurutkan list berdasarkan elemen pertamanya (yaitu jarak). Ini sangat mempermudah Anda!
+
+3. **Voting**:
+   Anda bisa menghitung jumlah kelas dengan menggunakan loop biasa atau menggunakan `collections.Counter` agar lebih ringkas.
