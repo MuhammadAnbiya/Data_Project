@@ -1,0 +1,6 @@
+bagus sekali saya suka,1
+jelek banget mengecewakan,0
+kualitas sangat bagus,1
+saya tidak suka produk ini,0
+sangat merekomendasikan barang ini,1
+buruk sekali tidak sesuai harapan,0
