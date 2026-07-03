@@ -1,0 +1,5 @@
+# Hints / Tips Naive Bayes
+
+1. **Frekuensi Kata**: Gunakan tipe data `dictionary` (dict) di Python untuk menghitung seberapa sering sebuah kata muncul di kelas Positif dan Negatif.
+2. **Laplace Smoothing**: Jika ada kata baru di data uji (test data) yang tidak pernah muncul di data latih (training data), probabilitasnya akan menjadi 0. Untuk mencegah hal ini, tambahkan +1 pada frekuensi setiap kata (ini disebut Laplace Smoothing).
+3. **Log Probability**: Saat mengalikan banyak probabilitas, nilainya bisa menjadi sangat kecil (mendekati 0) dan memicu error. Disarankan untuk menjumlahkan nilai *Logaritma* dari probabilitas tersebut (menggunakan modul `math.log`) daripada mengalikannya secara langsung.
