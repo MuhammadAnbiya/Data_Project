@@ -1,0 +1,6 @@
+# Hints / Tips K-Means
+
+1. **Inisialisasi Centroid**: Untuk tahap awal, Anda bebas! Anda bisa memilih K titik pertama dari dataset sebagai Centroid, atau secara acak.
+2. **Euclidean Distance**: Gunakan kembali logika jarak Euclidean dari kasus KNN untuk menghitung jarak antara titik data dan setiap Centroid.
+3. **Pembaruan Centroid (Mean)**: Centroid baru didapatkan dari nilai Rata-rata (Mean) semua titik data yang masuk ke dalam kelompok (cluster) tersebut. 
+4. **Converge**: Algoritma berhenti ketika posisi centroid di perulangan saat ini SAMA PERSIS dengan posisi centroid di perulangan sebelumnya.
