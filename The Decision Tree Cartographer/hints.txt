@@ -1,0 +1,23 @@
+# Hints & Mathematical Formulas
+
+1. **Entropy (H)**:
+   Entropy mengukur tingkat keacakan data. Rumusnya adalah:
+   $$H(S) = - \sum_{i=1}^{c} p_i \log_2(p_i)$$
+   Dimana:
+   - $S$ adalah dataset.
+   - $p_i$ adalah probabilitas (proporsi) kelas $i$ pada dataset.
+   - Jika probabilitas $p_i = 0$, maka $p_i \log_2(p_i)$ didefinisikan sebagai 0 (gunakan `math.log2`).
+
+2. **Information Gain (IG)**:
+   Information Gain mengukur seberapa efektif suatu atribut dalam mengelompokkan data. Rumusnya adalah:
+   $$IG(S, A) = H(S) - \sum_{v \in Values(A)} \frac{|S_v|}{|S|} H(S_v)$$
+   Dimana:
+   - $A$ adalah atribut/fitur yang diuji.
+   - $S_v$ adalah subset data di mana atribut $A$ bernilai $v$.
+   - $|S_v|$ adalah jumlah data di subset $S_v$.
+   - $|S|$ adalah total jumlah data.
+
+3. **Kriteria Berhenti Rekursif (Stop Base Case)**:
+   - Jika semua data memiliki label kelas target yang sama (Entropy = 0), kembalikan node daun (Leaf Node) dengan label tersebut.
+   - Jika tidak ada atribut tersisa untuk dibagi, kembalikan Leaf Node dengan kelas terbanyak (majority vote).
+   - Jika dataset kosong, kembalikan Leaf Node dengan kelas terbanyak dari parent node.
