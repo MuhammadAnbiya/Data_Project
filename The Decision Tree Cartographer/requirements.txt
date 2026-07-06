@@ -1,0 +1,2 @@
+# No external requirements needed for core implementation.
+# (Optional) matplotlib or graphviz if you want to extend this with visualization.
